@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+//This will be my game
+
 class HelloWorld : public cocos2d::Layer
 {
 public:
