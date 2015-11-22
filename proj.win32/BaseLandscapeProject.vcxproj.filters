@@ -18,7 +18,19 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="GameManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Spells.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +41,22 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="GameManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Spells.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
