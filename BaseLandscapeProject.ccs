@@ -5,6 +5,8 @@
       <RootFolder Name=".">
         <Project Name="MainScene.csd" Type="Scene" />
         <TTF Name="marspolice_i.ttf" />
+        <Image Name="soundOnBlack.png" />
+        <Image Name="soundOnWhite.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>
