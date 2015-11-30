@@ -31,9 +31,13 @@ bool GameScene::init()
 		return false;
 	}
 
+	enemy = new Enemy(this);
+
 	auto rootNode = CSLoader::createNode("MainScene.csb");
 
 	addChild(rootNode);
 
 	return true;
+
+
 }

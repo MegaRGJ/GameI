@@ -13,7 +13,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="1.0000" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
@@ -32,16 +32,6 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="HP_AtlasLabel" ActionTag="585252822" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="201.9020" BottomMargin="500.0980" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="639.9999" Y="509.0980" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.7071" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
-          </AbstractNodeData>
           <AbstractNodeData Name="Level_AtlasLabel" ActionTag="-1881630323" Tag="21" IconVisible="False" HorizontalEdge="RightEdge" LeftMargin="555.9995" RightMargin="556.0005" TopMargin="140.6206" BottomMargin="561.3794" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
             <Size X="168.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -49,7 +39,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5000" Y="0.7922" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Money_AtlasLabel" ActionTag="-1705874895" Tag="22" IconVisible="False" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="30.4365" BottomMargin="671.5635" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -59,7 +49,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5000" Y="0.9452" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="LaserPistol_Button" ActionTag="690055488" Tag="34" IconVisible="False" RightMargin="880.0000" TopMargin="120.0000" BottomMargin="450.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -189,7 +179,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.6944" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="LPAmount_AtlasLabel" ActionTag="-597415732" Tag="51" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="241.0000" BottomMargin="461.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -199,7 +189,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.6528" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="LRCost_AtlasLabel" ActionTag="-68418376" Tag="52" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="361.0000" BottomMargin="341.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -209,7 +199,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.4861" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="LRAmount_AtlasLabel" ActionTag="228800529" Tag="53" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="391.0000" BottomMargin="311.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -219,7 +209,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.4444" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="RGCost_AtlasLabel" ActionTag="-858014503" Tag="54" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="511.0000" BottomMargin="191.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -229,7 +219,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.2778" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="RGAmount_AtlasLabel" ActionTag="1496118833" Tag="55" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="541.0000" BottomMargin="161.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -239,7 +229,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.2361" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="EGCost_AtlasLabel" ActionTag="1947254651" Tag="56" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="661.0000" BottomMargin="41.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -249,7 +239,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.0694" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="EGAmount_AtlasLabel" ActionTag="-844164609" Tag="57" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="691.0000" BottomMargin="11.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -259,7 +249,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.0278" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="MCost_AtlasLabel" ActionTag="-1729644731" Tag="58" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="211.0000" BottomMargin="491.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -269,7 +259,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.6944" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="MAmount_AtlasLabel" ActionTag="-1452100145" Tag="59" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="241.0000" BottomMargin="461.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -279,7 +269,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.6528" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="SSCost_AtlasLabel" ActionTag="-165630576" Tag="60" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="361.0000" BottomMargin="341.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -289,7 +279,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.4861" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="SSAmount_AtlasLabel" ActionTag="1290802538" Tag="61" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="391.0000" BottomMargin="311.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -299,7 +289,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.4444" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="MECost_AtlasLabel" ActionTag="2094557626" Tag="62" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="511.0000" BottomMargin="191.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -309,7 +299,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.2778" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="MEAmount_AtlasLabel" ActionTag="-1906117170" Tag="63" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="541.0000" BottomMargin="161.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -319,7 +309,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.2361" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="OSCost_AtlasLabel" ActionTag="-1391053999" Tag="64" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="661.0000" BottomMargin="41.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -329,7 +319,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.0694" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="OSAmount_AtlasLabel" ActionTag="-1093386374" Tag="65" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="691.0000" BottomMargin="11.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
@@ -339,8 +329,18 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.0278" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1312" Y="0.0250" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="HP_HeathBar" ActionTag="-73108027" Tag="36" IconVisible="False" LeftMargin="539.9919" RightMargin="540.0081" TopMargin="203.0128" BottomMargin="502.9872" ProgressInfo="100" ctype="LoadingBarObjectData">
+            <Size X="200.0000" Y="14.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="639.9919" Y="509.9872" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.7083" />
+            <PreSize X="0.1563" Y="0.0194" />
+            <ImageFileData Type="Default" Path="Default/LoadingBarFile.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

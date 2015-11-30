@@ -2,6 +2,7 @@
 #define __GAMESCENE_SCENE_H__
 
 #include "cocos2d.h"
+#include "Enemy.h"
 
 //This will be my game
 
@@ -16,6 +17,9 @@ public:
 
 	// implement the "static create()" method manually
 	CREATE_FUNC(GameScene);
+
+private:
+	Enemy * enemy;
 };
 
 #endif // __GAMESCENE_SCENE_H__
