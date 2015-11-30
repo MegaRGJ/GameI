@@ -1,8 +1,8 @@
-#include "Enemy.h"
+#include "Enemy2.h"
 
 USING_NS_CC;
 
-Enemy::Enemy(cocos2d::Layer *layer)
+Enemy2::Enemy2(cocos2d::Layer *layer)
 {
 	visibleSize = Director::getInstance()->getVisibleSize();
 	origin = Director::getInstance()->getVisibleOrigin();
@@ -13,12 +13,15 @@ Enemy::Enemy(cocos2d::Layer *layer)
 	layer->addChild(enemyRobot, 100);
 }
 
-Enemy::~Enemy()
+Enemy2::~Enemy2()
 {
 
 }
 
-void Enemy::Respawn()
+void Enemy2::Respawn()
 {
 	health = 100;
 }
+
+
+

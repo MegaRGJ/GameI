@@ -1,13 +1,15 @@
-#ifndef __ENEMY_H__
-#define __ENEMY_H__
+#pragma once
+
+#ifndef __ENEMY2_H__
+#define __ENEMY2_H__
 
 #include "cocos2d.h"
 
-class Enemy
+class Enemy2
 {
 public:
-	Enemy(cocos2d::Layer *layer);
-	~Enemy();
+	Enemy2(cocos2d::Layer *layer);
+	~Enemy2();
 	void Respawn();
 
 private:
@@ -17,4 +19,5 @@ private:
 	cocos2d::Sprite *enemyRobot;
 };
 
-#endif // __ENEMY_H__
+#endif // __ENEMY2_H__
+

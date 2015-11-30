@@ -16,6 +16,14 @@ public:
 
 	// implement the "static create()" method manually
 	CREATE_FUNC(MainMenuScene);
+
+	void StartButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+	void QuitButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+
+private:
+	cocos2d::ui::Button*    startButton;
+	cocos2d::ui::Button*    quitButton;
+
 };
 
 #endif // __MAINMENUSCENE_SCENE_H__
