@@ -1,8 +1,9 @@
 <Solution>
-  <PropertyGroup Name="BASELA~1" Version="2.3.2.3" Type="CocosStudio" />
+  <PropertyGroup Name="BaseLandscapeProject" Version="2.3.2.3" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Image Name="Background.png" />
         <TTF Name="marspolice_i.ttf" />
         <Image Name="soundOnBlack.png" />
         <Image Name="soundOnWhite.png" />
