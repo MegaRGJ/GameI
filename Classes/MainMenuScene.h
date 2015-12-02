@@ -2,6 +2,7 @@
 #define __MAINMENUSCENE_SCENE_H__
 
 #include "cocos2d.h"
+#include "ui/CocosGUI.h"
 
 //This will be my game
 
@@ -17,8 +18,18 @@ public:
 	// implement the "static create()" method manually
 	CREATE_FUNC(MainMenuScene);
 
+	//Deal with touches.
+	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
+	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
+	virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
+	virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
+
+	//Button event
+	void StartButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+
 private:
 	void GoToGameScene(cocos2d::Ref *sender);
+	cocos2d::ui::Button*    startButton;
 
 };
 

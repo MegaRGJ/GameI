@@ -31,28 +31,33 @@ bool MainMenuScene::init()
 		return false;
 	}
 
-	auto playItem = MenuItemImage::create("Play Button.png", "Play Button Clicked.png", CC_CALLBACK_1(MainMenuScene::GoToGameScene, this));
-	playItem->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+	auto rootNode = CSLoader::createNode("MainScene.csb");
 
-	auto menu = Menu::create(playItem, NULL);
-	menu->setPosition(Point::ZERO);
+	addChild(rootNode);
 
-	this->addChild(menu);
+	auto winSize = Director::getInstance()->getVisibleSize();
 
-	auto QuitItem = MenuItemImage::create("Quit Button.png", "Quit Button Clicked.png", CC_CALLBACK_1(MainMenuScene::GoToGameScene, this));
-	playItem->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+	//-----------------------------------------------------------------------------------------
+	//TOUCHES
+	//Set up a touch listener.
+	auto touchListener = EventListenerTouchOneByOne::create();
 
-	auto quit = Quit::create(playItem, NULL);
-	menu->setPosition(Point::ZERO);
+	//Set callbacks for our touch functions.
+	touchListener->onTouchBegan = CC_CALLBACK_2(MainMenuScene::onTouchBegan, this);
+	touchListener->onTouchEnded = CC_CALLBACK_2(MainMenuScene::onTouchEnded, this);
+	touchListener->onTouchMoved = CC_CALLBACK_2(MainMenuScene::onTouchMoved, this);
+	touchListener->onTouchCancelled = CC_CALLBACK_2(MainMenuScene::onTouchCancelled, this);
 
-	this->addChild(menu);
+	//Add our touch listener to event listener list.
+	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+	//-----------------------------------------------------------------------------------------
+
+	//-----------------------------------------------------------------------------------------
+	//Start button.
+	startButton = static_cast<ui::Button*>(rootNode->getChildByName("btnStart"));
+	startButton->addTouchEventListener(CC_CALLBACK_2(MainMenuScene::StartButtonPressed, this));
+	startButton->setPosition(Vec2(winSize.width*0.5f, winSize.height*0.5f));
+	//-----------------------------------------------------------------------------------------
 
 	return true;
-}
-
-void MainMenuScene::GoToGameScene(cocos2d::Ref *sender)
-{
-	auto scene = GameScene::createScene();
-
-	Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 }
