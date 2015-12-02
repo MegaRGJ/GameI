@@ -6,18 +6,18 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="Default" ActionTag="953446860" Tag="5" IconVisible="False" LeftMargin="1777.1926" RightMargin="-1457.1926" TopMargin="4.9918" BottomMargin="75.0082" ctype="SpriteObjectData">
-            <Size X="960.0000" Y="640.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="2257.1926" Y="395.0082" />
+          <AbstractNodeData Name="Background" CanEdit="False" ActionTag="953446860" Tag="5" IconVisible="False" VerticalEdge="BottomEdge" ctype="SpriteObjectData">
+            <Size X="1280.0000" Y="720.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position Y="720.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="1.7634" Y="0.5486" />
+            <PrePosition Y="1.0000" />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
+            <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Attack_Button" ActionTag="-1954631143" Tag="3" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="BottomEdge" LeftMargin="415.0000" RightMargin="415.0000" TopMargin="245.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Attack_Button" ActionTag="-1954631143" Alpha="87" Tag="3" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="BottomEdge" LeftMargin="415.0000" RightMargin="415.0000" TopMargin="245.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="450.0000" Y="450.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="640.0000" Y="225.0000" />
@@ -257,33 +257,33 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="HP_AtlasLabel" ActionTag="585252822" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="556.0308" RightMargin="555.9692" TopMargin="209.9026" BottomMargin="492.0974" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
+          <AbstractNodeData Name="HP_AtlasLabel" ActionTag="585252822" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="201.9020" BottomMargin="500.0980" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
             <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5282" ScaleY="0.6448" />
-            <Position X="644.7681" Y="503.7038" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="639.9999" Y="509.0980" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5037" Y="0.6996" />
+            <PrePosition X="0.5000" Y="0.7071" />
             <PreSize X="0.0000" Y="0.0000" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Level_AtlasLabel" ActionTag="-1881630323" Tag="21" IconVisible="False" HorizontalEdge="RightEdge" LeftMargin="555.9995" RightMargin="556.0005" TopMargin="92.6245" BottomMargin="609.3755" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
+          <AbstractNodeData Name="Level_AtlasLabel" ActionTag="-1881630323" Tag="21" IconVisible="False" HorizontalEdge="RightEdge" LeftMargin="555.9995" RightMargin="556.0005" TopMargin="140.6206" BottomMargin="561.3794" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
             <Size X="168.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="639.9995" Y="618.3755" />
+            <Position X="639.9995" Y="570.3794" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.8589" />
+            <PrePosition X="0.5000" Y="0.7922" />
             <PreSize X="0.0000" Y="0.0000" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Money_AtlasLabel" ActionTag="-1705874895" Tag="22" IconVisible="False" LeftMargin="556.0000" RightMargin="556.0000" TopMargin="14.4387" BottomMargin="687.5613" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
+          <AbstractNodeData Name="Money_AtlasLabel" ActionTag="-1705874895" Tag="22" IconVisible="False" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="30.4365" BottomMargin="671.5635" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
             <Size X="168.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="640.0000" Y="696.5613" />
+            <Position X="639.9999" Y="680.5635" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.9674" />
+            <PrePosition X="0.5000" Y="0.9452" />
             <PreSize X="0.0000" Y="0.0000" />
             <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
