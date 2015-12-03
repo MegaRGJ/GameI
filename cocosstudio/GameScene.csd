@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Scene" Name="MainScene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -77,13 +77,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LaserRifle_Button" ActionTag="1098325244" Tag="35" IconVisible="False" LeftMargin="-1.8595" RightMargin="881.8595" TopMargin="266.2810" BottomMargin="303.7190" TouchEnable="True" FontSize="14" ButtonText="LaserRifle_Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="LaserRifle_Button" ActionTag="1098325244" Tag="35" IconVisible="False" RightMargin="880.0000" TopMargin="270.0000" BottomMargin="300.0000" TouchEnable="True" FontSize="14" ButtonText="LaserRifle_Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="400.0000" Y="150.0000" />
             <AnchorPoint />
-            <Position X="-1.8595" Y="303.7190" />
+            <Position Y="300.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.0015" Y="0.4218" />
+            <PrePosition Y="0.4167" />
             <PreSize X="0.3125" Y="0.2083" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
@@ -346,4 +346,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>
