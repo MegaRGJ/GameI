@@ -35,29 +35,5 @@ bool MainMenuScene::init()
 
 	addChild(rootNode);
 
-	auto winSize = Director::getInstance()->getVisibleSize();
-
-	//-----------------------------------------------------------------------------------------
-	//TOUCHES
-	//Set up a touch listener.
-	auto touchListener = EventListenerTouchOneByOne::create();
-
-	//Set callbacks for our touch functions.
-	touchListener->onTouchBegan = CC_CALLBACK_2(MainMenuScene::onTouchBegan, this);
-	touchListener->onTouchEnded = CC_CALLBACK_2(MainMenuScene::onTouchEnded, this);
-	touchListener->onTouchMoved = CC_CALLBACK_2(MainMenuScene::onTouchMoved, this);
-	touchListener->onTouchCancelled = CC_CALLBACK_2(MainMenuScene::onTouchCancelled, this);
-
-	//Add our touch listener to event listener list.
-	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
-	//-----------------------------------------------------------------------------------------
-
-	//-----------------------------------------------------------------------------------------
-	//Start button.
-	startButton = static_cast<ui::Button*>(rootNode->getChildByName("btnStart"));
-	startButton->addTouchEventListener(CC_CALLBACK_2(MainMenuScene::StartButtonPressed, this));
-	startButton->setPosition(Vec2(winSize.width*0.5f, winSize.height*0.5f));
-	//-----------------------------------------------------------------------------------------
-
 	return true;
 }

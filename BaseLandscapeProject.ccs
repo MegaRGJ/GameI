@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="BaseLandscapeProject" Version="2.3.2.3" Type="CocosStudio" />
+  <PropertyGroup Name="BASELA~1" Version="2.3.2.3" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -8,6 +8,7 @@
         <Image Name="soundOnBlack.png" />
         <Image Name="soundOnWhite.png" />
         <Project Name="MenuScene.csd" Type="Scene" />
+        <Project Name="MainScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
