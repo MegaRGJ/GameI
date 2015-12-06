@@ -1,4 +1,5 @@
 #include "GameManager.h"
+#include "windows.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 
