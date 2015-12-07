@@ -1,10 +1,16 @@
 #include "GameScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "GameManager.h"
+
 
 USING_NS_CC;
 
+
 using namespace cocostudio::timeline;
+using namespace cocos2d;
+using namespace cocos2d::ui;
+
 
 Scene* GameScene::createScene()
 {
@@ -31,9 +37,34 @@ bool GameScene::init()
 		return false;
 	}
 
+	GameManager::sharedGameManager()->resetScore();
+
 	auto rootNode = CSLoader::createNode("MainScene.csb");
 
 	addChild(rootNode);
 
+	this->scheduleUpdate();
+
+	moneyLabel = (Text*)rootNode->getChildByName("Money_Label");
+
+	attackButton = static_cast<ui::Button*>(rootNode->getChildByName("Attack_Button"));
+	attackButton->addTouchEventListener(CC_CALLBACK_2(GameScene::AttackButtonPressed, this)); // need to change to health/hp
+
 	return true;
+}
+
+void GameScene::update(float delta)
+{
+	moneyLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetMoney()));
+}
+
+void GameScene::AttackButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType type)
+{
+	CCLOG("In touch! %d", type);
+
+	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
+	{
+		GameManager::sharedGameManager()->AddToMoney(1);
+	}
+	
 }

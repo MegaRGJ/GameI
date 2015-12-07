@@ -2,20 +2,43 @@
 #define __GAMEMANAGER_SCENE_H__
 
 #include "cocos2d.h"
-
+#include <stdio.h>
 //This will be my game
 
-class GameManager : public cocos2d::Layer
+class GameManager
 {
 public:
-	// there's no 'id' in cpp, so we recommend returning the class instance pointer
-	static cocos2d::Scene* createScene();
+	~GameManager();
+	static GameManager* sharedGameManager();
 
-	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-	virtual bool init();
+	void resetScore();
+	//Money, level and hp incrementers 
+	void AddToMoney(int i);
+	void AddToLevel(int i);
 
-	// implement the "static create()" method manually
-	CREATE_FUNC(GameManager);
+
+	//increnments to users click
+	void AddToLP(int i, int j); 
+	void AddToLR(int i, int j);
+	void AddToRG(int i, int j);
+	void AddToEMPG(int i, int j);
+
+	//increnments to auto clicks
+	void AddToM(int i, int j);
+	void AddToSS(int i, int j);
+	void AddToMech(int i, int j);
+	void AddToOS(int i, int j);
+
+	//gets 
+	int GetMoney();
+
+	//variables
+	int money;
+	bool isGameLive;
+	
+private:
+	GameManager();
+	static GameManager* instance;
 };
 
 #endif // __GAMEMANAGER_SCENE_H__
