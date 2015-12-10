@@ -74,11 +74,10 @@ void GameManager::HPManager()
 	}
 }
 
-void GameManager::AutoDamageHP()
+void GameManager::AutoDamageHP(int i)
 {
 	this->hp -= damageAutoTotal;
-	this->money += damageAutoTotal;
-	HPManager();
+	this->money += i + damageAutoTotal;
 }
 
 bool GameManager::PriceCheck(int cost)
@@ -98,15 +97,15 @@ void GameManager::DamageClick(int amount, int baseDmg)
 {
 	int damage =  baseDmg * amount + 1;
 
-	damageTotal = +damage;
+	damageTotal = damageTotal + damage;
 
-}
+} 
 
 void GameManager::DamageAuto(int amount, int baseDmg)
 {
 	int damage = baseDmg * (amount + 1);
 
-	damageAutoTotal = +damage;
+	damageAutoTotal = damageAutoTotal + damage;
 
 }
 

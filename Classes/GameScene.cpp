@@ -65,6 +65,8 @@ bool GameScene::init()
 	mechAmountLabel = (Text*)rootNode->getChildByName("MEAmount_Label");
 	osCostLabel = (Text*)rootNode->getChildByName("OSCost_Label");
 	osAmountLabel = (Text*)rootNode->getChildByName("OSAmount_Label");
+	clickDPSLabel = (Text*)rootNode->getChildByName("ClickDPS_Label");
+	autoDPSLabel = (Text*)rootNode->getChildByName("AutoDPS_Label");;
 	
 	//Button Children
 	attackButton = static_cast<ui::Button*>(rootNode->getChildByName("Attack_Button"));
@@ -94,32 +96,34 @@ bool GameScene::init()
 void GameScene::update(float delta)
 {
 	// no HP in here atm
-	hpLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetHP()));
-	moneyLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetMoney()));
-	levelLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetLevel()));
-	lpCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetlpCost()));
-	lpAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetlpAmount()));
-	lrCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetlrCost()));
-	lrAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetlrAmount()));
-	rgCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetrgCost()));
-	rgAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetrgAmount()));
-	egCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetegCost()));
-	egAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetegAmount()));
-	mCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetmCost()));
-	mAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetmAmount()));
-	ssCostlabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetssCost()));
-	ssAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetssAmount()));
-	mechCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetmechCost()));
-	mechAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetmechAmount()));
-	osCostLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetosCost()));
-	osAmountLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetosAmount()));
+	hpLabel->setString(StringUtils::format("HP: %d", GameManager::sharedGameManager()->GetHP()));
+	moneyLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetMoney()));
+	levelLabel->setString(StringUtils::format("Level: %d", GameManager::sharedGameManager()->GetLevel()));
+	lpCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetlpCost()));
+	lpAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetlpAmount()));
+	lrCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetlrCost()));
+	lrAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetlrAmount()));
+	rgCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetrgCost()));
+	rgAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetrgAmount()));
+	egCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetegCost()));
+	egAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetegAmount()));
+	mCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetmCost()));
+	mAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetmAmount()));
+	ssCostlabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetssCost()));
+	ssAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetssAmount()));
+	mechCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetmechCost()));
+	mechAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetmechAmount()));
+	osCostLabel->setString(StringUtils::format("$%d", GameManager::sharedGameManager()->GetosCost()));
+	osAmountLabel->setString(StringUtils::format("x%d", GameManager::sharedGameManager()->GetosAmount()));
 
-	schedule(schedule_selector(GameScene::AutoAttacks), 1.0f);
+	GameManager::sharedGameManager()->HPManager();
+
+	schedule(schedule_selector(GameScene::AutoAttacks), 0.01f);
 }
 
 void GameScene::AutoAttacks(float s)
 {
-	GameManager::sharedGameManager()->AutoDamageHP();
+	GameManager::sharedGameManager()->AutoDamageHP(0);
 }
 
 void GameScene::AttackButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType type)
@@ -141,7 +145,7 @@ void GameScene::LPButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
 
-		GameManager::sharedGameManager()->AddToLP(1.2f, 1); // should be passing in the value in the label in the place of 5 and then timesing it later on in the game manager
+		GameManager::sharedGameManager()->AddToLP(1.2f, 1); 
 	}
 }
 

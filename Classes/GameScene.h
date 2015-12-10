@@ -55,6 +55,9 @@ private:
 	cocos2d::ui::Button*	mechButton;
 	cocos2d::ui::Button*	osButton;
 
+
+	cocos2d::ui::Text*		clickDPSLabel;
+	cocos2d::ui::Text*		autoDPSLabel;
 	cocos2d::ui::Text*      moneyLabel;
 	cocos2d::ui::Text*		levelLabel;
 	cocos2d::ui::Text*		hpLabel;

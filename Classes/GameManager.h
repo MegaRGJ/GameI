@@ -16,7 +16,7 @@ public:
 	void AddToMoney(int i);
 	void AddToLevel(int i);
 	void DamageHP(int hp);
-	void AutoDamageHP();
+	void AutoDamageHP(int i);
 	void HPManager();
 
 	//increnments to users click
@@ -61,23 +61,23 @@ public:
 	int hp;
 	int damageTotal;
 	int damageAutoTotal;
-	int money;
+	signed long long int money; // 64 bits
 	int level;
-	int lpCost;
+	signed long int lpCost; //32 bits
 	int lpAmount;
-	int lrCost;
+	signed long int lrCost;
 	int lrAmount;
-	int rgCost;
+	signed long int rgCost;
 	int rgAmount;
-	int egCost;
+	signed long int egCost;
 	int egAmount;
-	int mCost;
+	signed long int mCost;
 	int mAmount;
-	int ssCost;
+	signed long int ssCost;
 	int ssAmount;
-	int mechCost;
+	signed long int mechCost;
 	int mechAmount;
-	int osCost;
+	signed long int osCost;
 	int osAmount;
 
 
