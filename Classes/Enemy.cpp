@@ -15,10 +15,5 @@ Enemy::Enemy(cocos2d::Layer *layer)
 
 Enemy::~Enemy()
 {
-
-}
-
-void Enemy::Respawn()
-{
-	health = 100;
+	layer->removeChild(enemyRobot, 100);
 }

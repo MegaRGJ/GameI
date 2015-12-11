@@ -8,7 +8,6 @@ class Enemy
 public:
 	Enemy(cocos2d::Layer *layer);
 	~Enemy();
-	void Respawn();
 
 private:
 	cocos2d::Size visibleSize;
