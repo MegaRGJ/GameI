@@ -17,10 +17,10 @@
             <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Attack_Button" ActionTag="-1954631143" Alpha="87" Tag="3" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="BottomEdge" LeftMargin="415.0000" RightMargin="415.0000" TopMargin="270.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="450.0000" Y="450.0000" />
+          <AbstractNodeData Name="Attack_Button" ActionTag="-1954631143" Alpha="87" Tag="3" IconVisible="False" VerticalEdge="BottomEdge" LeftMargin="415.0000" RightMargin="415.0000" TopMargin="270.0000" TouchEnable="True" StretchWidthEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="450.0480" Y="450.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="640.0000" Y="225.0000" />
+            <Position X="640.0240" Y="225.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.3125" />
@@ -31,36 +31,6 @@
             <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="HP_AtlasLabel" ActionTag="585252822" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="201.9020" BottomMargin="500.0980" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="639.9999" Y="509.0980" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.7071" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Level_AtlasLabel" ActionTag="-1881630323" Tag="21" IconVisible="False" HorizontalEdge="RightEdge" LeftMargin="555.9995" RightMargin="556.0005" TopMargin="140.6206" BottomMargin="561.3794" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="639.9995" Y="570.3794" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.7922" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Money_AtlasLabel" ActionTag="-1705874895" Tag="22" IconVisible="False" LeftMargin="555.9999" RightMargin="556.0001" TopMargin="30.4365" BottomMargin="671.5635" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="639.9999" Y="680.5635" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.9452" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="LaserPistol_Button" ActionTag="690055488" Tag="34" IconVisible="False" RightMargin="880.0000" TopMargin="120.0000" BottomMargin="450.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="400.0000" Y="150.0000" />
@@ -77,13 +47,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LaserRifle_Button" ActionTag="1098325244" Tag="35" IconVisible="False" LeftMargin="-1.8595" RightMargin="881.8595" TopMargin="266.2810" BottomMargin="303.7190" TouchEnable="True" FontSize="14" ButtonText="LaserRifle_Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="LaserRifle_Button" ActionTag="1098325244" Tag="35" IconVisible="False" RightMargin="880.0000" TopMargin="270.0000" BottomMargin="300.0000" TouchEnable="True" FontSize="14" ButtonText="LaserRifle_Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="400.0000" Y="150.0000" />
             <AnchorPoint />
-            <Position X="-1.8595" Y="303.7190" />
+            <Position Y="300.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.0015" Y="0.4218" />
+            <PrePosition Y="0.4167" />
             <PreSize X="0.3125" Y="0.2083" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
@@ -122,10 +92,10 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="orbitalStrike_Button" ActionTag="-736669798" Tag="46" IconVisible="False" LeftMargin="880.0000" TopMargin="570.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="OrbitalStrike_Button" ActionTag="-736669798" Tag="46" IconVisible="False" LeftMargin="879.9984" RightMargin="0.0016" TopMargin="570.0000" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="400.0000" Y="150.0000" />
             <AnchorPoint ScaleX="1.0000" />
-            <Position X="1280.0000" />
+            <Position X="1279.9984" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="1.0000" />
@@ -182,165 +152,257 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LPCost_AtlasLabel" ActionTag="-794720918" Tag="50" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="211.0000" BottomMargin="491.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="Money_Label" ActionTag="-959417147" Tag="31" IconVisible="False" LeftMargin="581.5000" RightMargin="581.5000" TopMargin="29.5000" BottomMargin="669.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="640.0000" Y="680.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.5000" Y="0.9444" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Level_Label" ActionTag="-662770868" Tag="33" IconVisible="False" LeftMargin="581.5000" RightMargin="581.5000" TopMargin="139.5000" BottomMargin="559.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="640.0000" Y="570.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.5000" Y="0.7917" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="HP_Label" ActionTag="2047638933" Tag="34" IconVisible="False" LeftMargin="581.5000" RightMargin="581.5000" TopMargin="200.5000" BottomMargin="498.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="640.0000" Y="509.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.5000" Y="0.7069" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="LPCost_Label" ActionTag="-366119648" Tag="32" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="209.5000" BottomMargin="489.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="500.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.6944" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LPAmount_AtlasLabel" ActionTag="-597415732" Tag="51" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="241.0000" BottomMargin="461.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="LPAmount_Label" ActionTag="983413246" Tag="33" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="239.5000" BottomMargin="459.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="470.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.6528" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LRCost_AtlasLabel" ActionTag="-68418376" Tag="52" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="361.0000" BottomMargin="341.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="200.0000" Y="350.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1563" Y="0.4861" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="LRAmount_AtlasLabel" ActionTag="228800529" Tag="53" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="391.0000" BottomMargin="311.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="LRAmount_Label" ActionTag="-6020743" Tag="34" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="389.5000" BottomMargin="309.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="320.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.4444" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="RGCost_AtlasLabel" ActionTag="-858014503" Tag="54" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="511.0000" BottomMargin="191.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="LRCost_Label" ActionTag="-448866889" Tag="35" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="359.5000" BottomMargin="339.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="200.0000" Y="350.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1563" Y="0.4861" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="RGCost_Label" ActionTag="773223374" Tag="36" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="509.5000" BottomMargin="189.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="200.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.2778" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="RGAmount_AtlasLabel" ActionTag="1496118833" Tag="55" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="541.0000" BottomMargin="161.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="RGAmount_Label" ActionTag="-1145458213" Tag="37" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="539.5000" BottomMargin="159.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="170.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.2361" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="EGCost_AtlasLabel" ActionTag="1947254651" Tag="56" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="661.0000" BottomMargin="41.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="EGCost_Label" ActionTag="279617969" Tag="38" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="659.5000" BottomMargin="39.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="50.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.0694" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="EGAmount_AtlasLabel" ActionTag="-844164609" Tag="57" IconVisible="False" LeftMargin="116.0000" RightMargin="996.0000" TopMargin="691.0000" BottomMargin="11.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="EGAmount_Label" ActionTag="566503951" Tag="39" IconVisible="False" LeftMargin="141.5000" RightMargin="1021.5000" TopMargin="689.5000" BottomMargin="9.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="200.0000" Y="20.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1563" Y="0.0278" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MCost_AtlasLabel" ActionTag="-1729644731" Tag="58" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="211.0000" BottomMargin="491.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="MCost_Label" ActionTag="-320273436" Tag="40" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="209.5000" BottomMargin="489.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="500.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.6944" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MAmount_AtlasLabel" ActionTag="-1452100145" Tag="59" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="241.0000" BottomMargin="461.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="MAmount_Label" ActionTag="1587902150" Tag="41" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="239.5000" BottomMargin="459.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="470.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.6528" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="SSCost_AtlasLabel" ActionTag="-165630576" Tag="60" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="361.0000" BottomMargin="341.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="SSCost_Label" ActionTag="1218627121" Tag="42" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="359.5000" BottomMargin="339.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="350.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.4861" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="SSAmount_AtlasLabel" ActionTag="1290802538" Tag="61" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="391.0000" BottomMargin="311.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="SSAmount_Label" ActionTag="1858306899" Tag="43" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="389.5000" BottomMargin="309.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="320.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.4444" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MECost_AtlasLabel" ActionTag="2094557626" Tag="62" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="511.0000" BottomMargin="191.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="MECost_Label" ActionTag="-483069268" Tag="44" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="509.5000" BottomMargin="189.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="200.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.2778" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MEAmount_AtlasLabel" ActionTag="-1906117170" Tag="63" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="541.0000" BottomMargin="161.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="MEAmount_Label" ActionTag="-986069815" Tag="45" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="539.5000" BottomMargin="159.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="170.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.2361" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="OSCost_AtlasLabel" ActionTag="-1391053999" Tag="64" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="661.0000" BottomMargin="41.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="OSCost_Label" ActionTag="385030601" Tag="46" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="659.5000" BottomMargin="39.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="50.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.0694" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="OSAmount_AtlasLabel" ActionTag="-1093386374" Tag="65" IconVisible="False" LeftMargin="996.0000" RightMargin="116.0000" TopMargin="691.0000" BottomMargin="11.0000" CharWidth="14" CharHeight="18" LabelText="./0123456789" StartChar="." ctype="TextAtlasObjectData">
-            <Size X="168.0000" Y="18.0000" />
+          <AbstractNodeData Name="OSAmount_Label" ActionTag="1199255287" Tag="47" IconVisible="False" LeftMargin="1021.5000" RightMargin="141.5000" TopMargin="689.5000" BottomMargin="9.5000" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="117.0000" Y="21.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1080.0000" Y="20.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.8438" Y="0.0278" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+            <PreSize X="0.0914" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ClickDPS_Label" ActionTag="-1735330977" Tag="36" RotationSkewX="-3.6148" RotationSkewY="-3.6140" IconVisible="False" LeftMargin="428.7188" RightMargin="839.2812" TopMargin="530.2877" BottomMargin="168.7123" FontSize="20" LabelText="0&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="12.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="434.7188" Y="179.2123" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.3396" Y="0.2489" />
+            <PreSize X="0.0094" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="AutoDPS_Label" ActionTag="-398159807" Tag="37" IconVisible="False" LeftMargin="834.3563" RightMargin="433.6437" TopMargin="527.7578" BottomMargin="171.2422" FontSize="20" LabelText="0&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="12.0000" Y="21.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="840.3563" Y="181.7422" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.6565" Y="0.2524" />
+            <PreSize X="0.0094" Y="0.0292" />
+            <FontResource Type="Normal" Path="marspolice_i.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

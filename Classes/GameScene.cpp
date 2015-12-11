@@ -90,6 +90,10 @@ bool GameScene::init()
 	mechButton->addTouchEventListener(CC_CALLBACK_2(GameScene::MechButtonPressed, this));
 	osButton->addTouchEventListener(CC_CALLBACK_2(GameScene::OSButtonPressed, this));
 
+
+	autoDPSLabel->setOpacity(0);
+	clickDPSLabel->setOpacity(0);
+
 	return true;
 }
 
@@ -118,12 +122,26 @@ void GameScene::update(float delta)
 
 	GameManager::sharedGameManager()->HPManager();
 
-	schedule(schedule_selector(GameScene::AutoAttacks), 0.01f);
+	schedule(schedule_selector(GameScene::AutoAttacks), 1.0f);
+
+	if (autoDPSLabel->getOpacity() > 1)
+	{
+		autoDPSLabel->setOpacity(autoDPSLabel->getOpacity() - 5);
+	}
+	if (clickDPSLabel->getOpacity() > 1)
+	{
+		clickDPSLabel->setOpacity(clickDPSLabel->getOpacity() - 5);
+	}
 }
 
 void GameScene::AutoAttacks(float s)
 {
 	GameManager::sharedGameManager()->AutoDamageHP(0);
+	autoDPSLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetAutoDPS()));
+	if (GameManager::sharedGameManager()->GetAutoDPS() > 0)
+	{
+		autoDPSLabel->setOpacity(255);
+	}
 }
 
 void GameScene::AttackButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType type)
@@ -134,6 +152,8 @@ void GameScene::AttackButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEven
 	{
 		GameManager::sharedGameManager()->AddToMoney(1);
 		GameManager::sharedGameManager()->DamageHP(1);
+		clickDPSLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetDPS()));
+		clickDPSLabel->setOpacity(255);
 	}
 	
 }
@@ -145,7 +165,7 @@ void GameScene::LPButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
 
-		GameManager::sharedGameManager()->AddToLP(1.2f, 1); 
+		GameManager::sharedGameManager()->AddToLP(1.7f, 1);
 	}
 }
 
@@ -155,7 +175,7 @@ void GameScene::LRButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToLR(1.2f, 1);
+		GameManager::sharedGameManager()->AddToLR(1.7f, 1);
 	}
 }
 
@@ -165,7 +185,7 @@ void GameScene::RGButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToRG(1.2f, 1);
+		GameManager::sharedGameManager()->AddToRG(1.7f, 1);
 	}
 }
 
@@ -175,7 +195,7 @@ void GameScene::EGButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToEMPG(1.2f, 1);
+		GameManager::sharedGameManager()->AddToEMPG(1.7f, 1);
 	}
 }
 
@@ -185,7 +205,7 @@ void GameScene::MButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToM(1.2f, 1);
+		GameManager::sharedGameManager()->AddToM(1.7f, 1);
 	}
 }
 
@@ -195,7 +215,7 @@ void GameScene::SSButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToSS(1.2f, 1);
+		GameManager::sharedGameManager()->AddToSS(1.7f, 1);
 	}
 }
 
@@ -205,7 +225,7 @@ void GameScene::MechButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventT
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToMech(1.2f, 1);
+		GameManager::sharedGameManager()->AddToMech(1.7f, 1);
 	}
 }
 
@@ -215,6 +235,6 @@ void GameScene::OSButtonPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventTyp
 
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
 	{
-		GameManager::sharedGameManager()->AddToOS(1.2f, 1);
+		GameManager::sharedGameManager()->AddToOS(1.7f, 1);
 	}
 }

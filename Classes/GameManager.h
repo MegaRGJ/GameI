@@ -55,6 +55,8 @@ public:
 	int GetmechAmount();
 	int GetosCost();
 	int GetosAmount();
+	int GetAutoDPS();
+	int GetDPS();
 
 	//variables
 	int hp1;

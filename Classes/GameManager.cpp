@@ -51,7 +51,7 @@ void GameManager::resetScore()
 // Money, level and hp
 void GameManager::AddToMoney(int i)
 {
-	this->money += i + damageTotal;
+	this->money += i + (damageTotal / 4) ;
 }
 
 void GameManager::AddToLevel(int i)
@@ -69,7 +69,7 @@ void GameManager::HPManager()
 {
 	if (this->hp < 0)
 	{
-		hp = (hp1 * level) * 1.30;
+		hp = (hp1 * level) * 2.60;
 		AddToLevel(1);
 	}
 }
@@ -280,10 +280,22 @@ int GameManager::GetosAmount()
 {
 	return osAmount;
 }
+
 int GameManager::GetHP()
 {
 	return hp;
 }
+
+int GameManager::GetAutoDPS()
+{
+	return damageAutoTotal;
+}
+
+int GameManager::GetDPS()
+{
+	return damageTotal + 1;
+}
+
 
 
 
