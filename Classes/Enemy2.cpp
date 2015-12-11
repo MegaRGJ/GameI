@@ -9,7 +9,10 @@ Enemy2::Enemy2(cocos2d::Layer *layer)
 
 	enemyRobot2 = Sprite::create(".png");
 	enemyRobot2->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+}
 
+Enemy2::AddEnemy2()
+{
 	layer->addChild(enemyRobot2, 100);
 }
 

@@ -7,6 +7,7 @@ class Enemy
 {
 public:
 	Enemy(cocos2d::Layer *layer);
+	AddEnemy();
 	~Enemy();
 
 private:
