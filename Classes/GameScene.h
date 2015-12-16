@@ -2,12 +2,12 @@
 #define __GAMESCENE_SCENE_H__
 
 #include "GameManager.h"
-#include "windows.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
 #include <string.h>
 #include <sstream>
+#include "Enemy.h"
 
 using namespace cocostudio::timeline;
 using namespace cocos2d;
@@ -77,6 +77,8 @@ private:
 	cocos2d::ui::Text*		mechAmountLabel;
 	cocos2d::ui::Text*		osCostLabel;
 	cocos2d::ui::Text*		osAmountLabel;
+
+	Enemy* enemy;
 };
 
 #endif // __GAMESCENE_SCENE_H__

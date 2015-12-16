@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include <stdio.h>
+#include "Enemy.h"
 //This will be my game
 
 class GameManager

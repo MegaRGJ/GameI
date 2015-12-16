@@ -17,7 +17,7 @@
         <AndroidVersion Value="android-21" />
         <iOS_Target Value="BaseLandscapeProject-mobile" />
         <iOS_BundleID Value="" />
-        <Platform Value="None" />
+        <Platform Value="Android" />
         <RunPlatform Value="Android" />
         <FrameworkVersion Value="cocos2d-x-3.8" />
         <IsDebugKeystore Value="True" />
@@ -34,7 +34,7 @@
           <FilePathData Path="MainScene.csd" />
           <FilePathData Path="MenuScene.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="MainScene.csd" />
+        <ActiveDocument Path="MenuScene.csd" />
       </Value>
     </Item>
   </Properties>

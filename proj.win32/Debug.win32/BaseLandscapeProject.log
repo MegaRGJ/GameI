@@ -1,48 +1,35 @@
-﻿Build started 06/12/2015 11:24:34.
-     1>Project "E:\GameI\proj.win32\BaseLandscapeProject.vcxproj" on node 2 (Build target(s)).
-     1>ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug.win32\game.res" game.rc 
+﻿Build started 16/12/2015 17:33:00.
+     1>Project "C:\Student Temporary Folder\final game\GameI\proj.win32\BaseLandscapeProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\cocos2d-x-3.8\cocos\audio\include" /I"\cocos2d-x-3.8\external" /I"\cocos2d-x-3.8\external\chipmunk\include\chipmunk" /I"\cocos2d-x-3.8\extensions" /I..\Classes /I.. /I"C:\cocos2d-x-3.8\cocos\2d\..\..\cocos\editor-support" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\cocos" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform\desktop" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\cocos2d-x-3.8\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\GameScene.cpp ..\Classes\MainMenuScene.cpp
+         AppDelegate.cpp
+         GameScene.cpp
+         MainMenuScene.cpp
+     1>c:\student temporary folder\final game\gamei\classes\appdelegate.cpp(41): warning C4305: 'argument' : truncation from 'double' to 'float'
        PreLinkEvent:
-         if not exist "E:\GameI\proj.win32\Debug.win32\" mkdir "E:\GameI\proj.win32\Debug.win32\"
-         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.8\prebuilt\win32\*.*" "E:\GameI\proj.win32\Debug.win32\"
+         if not exist "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\"
+         xcopy /Y /Q "\cocos2d-x-3.8\prebuilt\win32\*.*" "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\"
          
          :VCEnd
          60 File(s) copied
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GameI\proj.win32\Debug.win32\IncrementalGame.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\GameI\proj.win32\Debug.win32\ /LIBPATH:E:\GameI\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GameI\proj.win32\Debug.win32\IncrementalGame.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GameI\proj.win32\Debug.win32\IncrementalGame.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\IncrementalGame.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\\" /LIBPATH:"C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\\" opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\IncrementalGame.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\IncrementalGame.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
          Debug.win32\Enemy.obj
+         Debug.win32\Enemy2.obj
          Debug.win32\GameManager.obj
          Debug.win32\AppDelegate.obj
          Debug.win32\GameScene.obj
          Debug.win32\MainMenuScene.obj
-         Debug.win32\Spells.obj
          Debug.win32\main.obj
-     1>Enemy.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-            Creating library E:\GameI\proj.win32\Debug.win32\IncrementalGame.lib and object E:\GameI\proj.win32\Debug.win32\IncrementalGame.exp
-         BaseLandscapeProject.vcxproj -> E:\GameI\proj.win32\Debug.win32\IncrementalGame.exe
+         BaseLandscapeProject.vcxproj -> C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\IncrementalGame.exe
        CustomBuildStep:
-         if not exist "E:\GameI\proj.win32\Debug.win32\" mkdir "E:\GameI\proj.win32\Debug.win32\"
-         xcopy "E:\GameI\proj.win32\..\Resources" "E:\GameI\proj.win32\Debug.win32\" /D /E /I /F /Y
+         if not exist "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\"
+         xcopy "C:\Student Temporary Folder\final game\GameI\proj.win32\..\Resources" "C:\Student Temporary Folder\final game\GameI\proj.win32\Debug.win32\" /D /E /I /F /Y
                
          :VCEnd
-         E:\GameI\Resources\res\Background.png -> E:\GameI\proj.win32\Debug.win32\res\Background.png
-         E:\GameI\Resources\res\HelloWorld.png -> E:\GameI\proj.win32\Debug.win32\res\HelloWorld.png
-         E:\GameI\Resources\res\MainScene.csb -> E:\GameI\proj.win32\Debug.win32\res\MainScene.csb
-         E:\GameI\Resources\res\marspolice_i.ttf -> E:\GameI\proj.win32\Debug.win32\res\marspolice_i.ttf
-         E:\GameI\Resources\res\MenuScene.csb -> E:\GameI\proj.win32\Debug.win32\res\MenuScene.csb
-         E:\GameI\Resources\res\soundOnWhite.png -> E:\GameI\proj.win32\Debug.win32\res\soundOnWhite.png
-         E:\GameI\Resources\res\Default\Button_Disable.png -> E:\GameI\proj.win32\Debug.win32\res\Default\Button_Disable.png
-         E:\GameI\Resources\res\Default\Button_Normal.png -> E:\GameI\proj.win32\Debug.win32\res\Default\Button_Normal.png
-         E:\GameI\Resources\res\Default\Button_Press.png -> E:\GameI\proj.win32\Debug.win32\res\Default\Button_Press.png
-         E:\GameI\Resources\res\Default\SliderNode_Disable.png -> E:\GameI\proj.win32\Debug.win32\res\Default\SliderNode_Disable.png
-         E:\GameI\Resources\res\Default\SliderNode_Normal.png -> E:\GameI\proj.win32\Debug.win32\res\Default\SliderNode_Normal.png
-         E:\GameI\Resources\res\Default\SliderNode_Press.png -> E:\GameI\proj.win32\Debug.win32\res\Default\SliderNode_Press.png
-         E:\GameI\Resources\res\Default\Slider_Back.png -> E:\GameI\proj.win32\Debug.win32\res\Default\Slider_Back.png
-         E:\GameI\Resources\res\Default\Slider_PressBar.png -> E:\GameI\proj.win32\Debug.win32\res\Default\Slider_PressBar.png
-         E:\GameI\Resources\res\Default\TextAtlas.png -> E:\GameI\proj.win32\Debug.win32\res\Default\TextAtlas.png
-         15 File(s) copied
-     1>Done Building Project "E:\GameI\proj.win32\BaseLandscapeProject.vcxproj" (Build target(s)).
+         0 File(s) copied
+     1>Done Building Project "C:\Student Temporary Folder\final game\GameI\proj.win32\BaseLandscapeProject.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.78
+Time Elapsed 00:00:09.84

@@ -1,7 +1,6 @@
 #include "GameScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-#include "GameManager.h"
 
 
 USING_NS_CC;
@@ -90,6 +89,13 @@ bool GameScene::init()
 	mechButton->addTouchEventListener(CC_CALLBACK_2(GameScene::MechButtonPressed, this));
 	osButton->addTouchEventListener(CC_CALLBACK_2(GameScene::OSButtonPressed, this));
 
+	enemy = new Enemy(this);
+	enemy->AddEnemy(this);
+	//to replace
+	enemy->RemoveEnemy(this);
+	delete enemy;
+	enemy = new Enemy(this);
+	enemy->AddEnemy(this);
 
 	autoDPSLabel->setOpacity(0);
 	clickDPSLabel->setOpacity(0);

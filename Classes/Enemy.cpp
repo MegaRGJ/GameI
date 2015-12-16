@@ -1,39 +1,28 @@
+// Aidens Code
 #include "Enemy.h"
-#include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
 
 USING_NS_CC;
 
-using namespace cocostudio::timeline;
-
-Scene* Enemy::createScene()
+Enemy::Enemy(cocos2d::Layer *layer)
 {
-	// 'scene' is an autorelease object
-	auto scene = Scene::create();
+	visibleSize = Director::getInstance()->getVisibleSize();
+	origin = Director::getInstance()->getVisibleOrigin();
 
-	// 'layer' is an autorelease object
-	auto layer = Enemy::create();
-
-	// add layer as a child to scene
-	scene->addChild(layer);
-
-	// return the scene
-	return scene;
+	enemyRobot = Sprite::create("robot.png");
+	enemyRobot->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 }
 
-// on "init" you need to initialize your instance
-bool Enemy::init()
+void Enemy::AddEnemy(cocos2d::Layer *layer)
 {
-	//////////////////////////////
-	// 1. super init first
-	if (!Layer::init())
-	{
-		return false;
-	}
+	layer->addChild(enemyRobot, 100);
+}
 
-	auto rootNode = CSLoader::createNode("MainScene.csb");
+void Enemy::RemoveEnemy(cocos2d::Layer *layer)
+{
+	layer->removeChild(enemyRobot, 100);
+}
 
-	addChild(rootNode);
+Enemy::~Enemy()
+{
 
-	return true;
 }
