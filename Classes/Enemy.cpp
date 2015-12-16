@@ -11,12 +11,17 @@ Enemy::Enemy(cocos2d::Layer *layer)
 	enemyRobot->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 }
 
-Enemy::AddEnemy()
+void Enemy::AddEnemy(cocos2d::Layer *layer)
 {
 	layer->addChild(enemyRobot, 100);
 }
 
-Enemy::~Enemy()
+void Enemy::RemoveEnemy(cocos2d::Layer *layer)
 {
 	layer->removeChild(enemyRobot, 100);
+}
+
+Enemy::~Enemy()
+{
+	
 }

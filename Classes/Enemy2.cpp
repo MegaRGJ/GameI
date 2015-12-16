@@ -7,18 +7,21 @@ Enemy2::Enemy2(cocos2d::Layer *layer)
 	visibleSize = Director::getInstance()->getVisibleSize();
 	origin = Director::getInstance()->getVisibleOrigin();
 
-	enemyRobot2 = Sprite::create(".png");
-	enemyRobot2->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+	enemyRobot = Sprite::create(".png");
+	enemyRobot->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 }
 
-Enemy2::AddEnemy2()
+void Enemy2::AddEnemy(cocos2d::Layer *layer)
 {
-	layer->addChild(enemyRobot2, 100);
+	layer->addChild(enemyRobot, 100);
+}
+
+void Enemy2::RemoveEnemy(cocos2d::Layer *layer)
+{
+	layer->removeChild(enemyRobot, 100);
 }
 
 Enemy2::~Enemy2()
 {
-	layer->removeChild(enemyRobot2, 100);
+
 }
-
-
